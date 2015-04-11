@@ -1,14 +1,16 @@
-# history-of-hadoop
 > _Hadoop was named after an extinct species of elephants, a so called Yellow Hadoop._
 
-Seriously, these days, Apache Hadoop is practically synonymous with Big Data. I'll tell you an epic story about a passionate, yet gentle man, and his quest to make the entire Internet searchable.  
+Seriously, by now you must have heard the story of how it got its name.  
 
-The story begins on a sunny afternoon, sometime in 1997, when Doug Cutting (the man) started writing the first version of Lucene.
+These days, Apache Hadoop is practically synonymous with Big Data (although Apache Spark is catching up fast). I'll tell you an epic story about a passionate, yet gentle man, and his quest to make the entire Internet searchable.  
+
+The story begins on a sunny afternoon, sometime in 1997, when Doug Cutting ("the man") started writing the first version of Lucene.
 
 > ### What is Lucene, you ask.
-TLDR: Generally speaking, it is what makes Google return results with sub second latency.
-Lucene is a full text search library. OK, great, but what is a full text search library? FT search library is used to analyze ordinary text with the purpose of building an index. Index is a data structure that maps each term to its location (think index at the end of a book, with terms and one or more corresponding page numbers), so that when you search for a term, it immediately knows all the places where that term occurs.
-Well, it’s a bit more complicated than that and the data structure is actually called inverted or inverse index, but we won’t bother you with that stuff.
+TLDR: Generally speaking, it is what makes Google return results with sub second latency.  
+
+> Lucene is a full text search library. OK, great, but what is a full text search library? FT search library is used to analyze ordinary text with the purpose of building an index. Index is a data structure that maps each term to its location (think index at the end of a book, with terms and one or more corresponding page numbers), so that when you search for a term, it immediately knows all the places where that term occurs.
+Well, it’s a bit more complicated than that and the data structure is actually called inverted or inverse index, but I won’t bother you with that stuff.
 The whole point of index is to make searching fast. Imagine how useable would Google be if every time you searched for something, it went throughout the Internet and collected results. That’s a rather ridiculous notion, right?
 
 
@@ -103,11 +105,11 @@ _In the figure: IBM 3380 HD and USB stick  _
 
 || IBM HD | Commodity HD | USB stick
 |--------|--------|--------|--------
-|Year | 1987 | 2014 | 2014
+|Year | 1987 | 2015 | 2015
 |Weight | 120 Kg | 635 g | 5 g |
 |Capacity | 3.78 GB | 3 TB | 128 GB |
-|Price | $128 000 | $120.53 | $39.99 |
-|Price per GB | $33 862.43 | $0.04 | $0.37 |
+|Price | $128 000 | $105.53 | $35.99 |
+|Price per GB | $33 862.43 | $0.034 | $0.281 |
 
 _In the table: Storage over the years_  
 
@@ -125,9 +127,9 @@ Perhaps you would say that you do, in fact, keep a certain amount of history in 
 
 > The enormous benefit of information about history is either discarded, stored in expensive, specialized systems or force fitted into a RDB.  
 
-> Nevertheless, we, as IT people, being closer to that infrastructure, took care of our needs. Source control systems and machine logs don’t discard information. Do we commit a new source file to source control over the previous one? Do we keep just the latest log message in our server logs?  
+> Nevertheless, we, as IT people, being closer to that infrastructure, took care of our needs. Source control systems and machine logs don’t discard information. Do we commit a new source file to source control over the previous one? Do we keep just the latest log message in our server logs? Of course not!  
 
-> We argue that RDBs will be replaced with “immutable databases”. One such database is Rich Hickey’s own Datomic, a brilliant piece of engineering, if I may say so.  
+> I argue that RDBs will be replaced with “immutable databases”. One such database is Rich Hickey’s own [Datomic](www.datomic.com), a brilliant piece of engineering, if I may say so.  
 
 > This whole outline is a paraphrased Rich Hickey’s talk “Value of values” , which I wholeheartedly recommend.
 
